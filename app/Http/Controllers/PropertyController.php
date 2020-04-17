@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PropertyController extends Controller
 {
     /**
-     * Show the user dashboard.
+     * Show the view that diplays all properties.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
@@ -16,5 +16,19 @@ class PropertyController extends Controller
         $properties = Property::all();
 
         return view ('properties')->with('properties', $properties);
+    }
+
+    /**
+     * Display the specified property.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Properties $properties)
+    {
+        $properties = Property::get()->find($property->id);
+        $property_id = $property->id;
+        
+        return view('landlord.propertiesSingle', compact('property'));
     }
 }

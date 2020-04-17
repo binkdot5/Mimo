@@ -14,7 +14,10 @@
                         </div>
                     @endif
 
-                    You are logged in as a normal user!
+                    @include('partials.menu')
+
+                    <h2 class="pt-3">Welcome to Mimo! Person.</h2>
+
                 </div>
             </div>
         </div>

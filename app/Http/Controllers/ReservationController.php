@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Auth;
 
 class ReservationController extends Controller
 {
+    /**
+     * Display a listing of the reservations.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
         $reservations = Reservation::with('property')
@@ -18,13 +23,22 @@ class ReservationController extends Controller
         return view('dashboard.reservations')->with('reservations', $reservations);
     }
 
-    public function create($property_id)
+    /**
+     * Show the form for creating a new reservation.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
     {
-        $propertyInfo = Property::get()->find($property_id);
-
-        return view('dashboard.reservationCreate', compact('propertyInfo'));
+        return view('dashboard.reservationCreate');
     }
 
+    /**
+     * Store a newly created reservation in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {   
         $request->request->add(['user_id' => 1]);
@@ -33,6 +47,12 @@ class ReservationController extends Controller
         return redirect('dashboard/reservations')->with('success', 'Reservation created!');
     }
 
+    /**
+     * Display the specified reservation.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function show(Reservation $reservation)
     {
         $reservation = Reservation::with('property')->get()->find($reservation->id);        
@@ -42,15 +62,28 @@ class ReservationController extends Controller
         return view('dashboard.reservationSingle', compact('reservation', 'propertyInfo'));
     }
 
-    public function edit(Reservation $reservation)
+    /**
+     * Show the form for editing the specified reservation.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
-        $reservation = Reservation::with('property')->get()->find($reservation->id);
-        $property_id = $reservation->property_id;
-        $propertyInfo = Property::get()->find($property_id);
+        $reservation = Reservation::find($id);
 
-        return view('dashboard.reservationEdit', compact('reservation', 'propertyInfo'));
+        return 
+        \View::make('dashboard.reservationEdit')
+        ->with('reservation', $reservation);
     }
 
+    /**
+     * Update the specified reservation in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function update(Request $request, Reservation $reservation)
     {
         $reservation->user_id = 1;
@@ -59,6 +92,12 @@ class ReservationController extends Controller
         return redirect('dashboard/reservations')->with('success', 'Successfully updated reservation.');
     }
 
+    /**
+     * Remove the specified reservation from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function destroy()
     {
         $reservation = Reservation::find($reservation->id);

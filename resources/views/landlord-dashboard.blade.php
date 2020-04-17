@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Landlords-Dashboard')
 @section('content')
 <div class="container pt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Properties</div>
+                <div class="card-header">Landlord's Dashboard</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +15,7 @@
                         </div>
                     @endif
 
-                    You are logged in as a Landlord!
+                    
                 </div>
             </div>
         </div>
