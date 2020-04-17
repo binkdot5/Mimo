@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="21" viewBox="0 0 135 21">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#0a26e8"/>
+      <stop offset="1" stop-color="#007aff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_16" data-name="Group 16" transform="translate(-215 -940)">
+    <rect id="Rectangle_36" data-name="Rectangle 36" width="135" height="21" rx="5" transform="translate(215 940)" fill="url(#linear-gradient)"/>
+    <text id="mimo_verified" data-name="mimo verified" transform="translate(250 955)" fill="#fff" font-size="12" font-family="NeoSans-Bold, NeoSans" font-weight="700"><tspan x="0" y="0">mimo verified</tspan></text>
+    <path id="Icon_material-verified-user" data-name="Icon material-verified-user" d="M9.671,1.5,4.5,3.8V7.246a7.15,7.15,0,0,0,5.171,6.895,7.15,7.15,0,0,0,5.171-6.895V3.8ZM8.522,10.693l-2.3-2.3.81-.81L8.522,9.067l3.786-3.786.81.816Z" transform="translate(228.829 943.5)" fill="#fff"/>
+  </g>
+</svg>

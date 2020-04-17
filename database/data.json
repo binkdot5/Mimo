@@ -1,0 +1,100 @@
+[{
+	"id": 1,
+	"title": "Central Downtown Apartment with Amenities",
+	"description": "Come and stay at this modern and comfortable apartment! My home is centrally located right in the middle of the downtown. Talk about convenience! Shops, stores, and other destination areas are nearby. \r\n\r\nFeel the warmth of the sun as there is plenty of natural light showers. The living room features tv, sofa, table, radio, and fan. There is free wi-fi with a fast internet speed. \r\n\r\nForgot shopping for breakfast staples? We provide eggs, bread, cereals, coffee, milk, tea and cookies. Enjoy cooking as my kitchen boasts full size appliances. The dining table is for four people. Need to wash your clothes? There is a washer and a dryer. We provide hampers, detergents, and clothing conditioner. \r\n\r\nIf you need to hit the gym, there is located at the fourth floor of the building. There is indoor spa and pool.",
+	"address": "221, Kipps Lane",
+	"category": "Apartment",
+	"bed_room": 1,
+	"bath_room": 1,
+	"gallery": {
+		"data": [{
+				"id": 1,
+				"name": "apartment1.jpg"
+			},
+			{
+				"id": 2,
+				"name": "apartment1-1.jpg"
+			},
+			{
+				"id": 3,
+				"name": "apartment1-2.jpg"
+			}
+		]
+	},
+	"score": 4.25,
+	"review": {
+		"data": [{
+			"id": 1,
+			"title": "Really cool place!",
+			"body": "Lorem Ipsum yes.",
+			"user_id": "2"
+		}]
+	},
+	"user_id": "1",
+	"active": true,
+	"utility_heating": true,
+	"utility_wifi": true,
+	"utility_patio": false,
+	"kitchen_fridge": true,
+	"kitchen_freezer": true,
+	"kitchen_oven": true,
+	"kitchen_stove": true,
+	"kitchen_potspans": false,
+	"kitchen_microwave": true,
+	"kitchen_dishwasher": false,
+	"bathroom_shower": true,
+	"bathroom_sink": true,
+	"bathroom_toilet": true,
+	"bathroom_bathtub": false,
+	"bathroom_window": true
+},
+{
+	"id": 2,
+	"title": "Cozy Single Room in a house near Fanshawe",
+	"description": "Come and stay at this modern and comfortable apartment! My home is centrally located right in the middle of the downtown. Talk about convenience! Shops, stores, and other destination areas are nearby. \r\n\r\nFeel the warmth of the sun as there is plenty of natural light showers. The living room features tv, sofa, table, radio, and fan. There is free wi-fi with a fast internet speed. \r\n\r\nForgot shopping for breakfast staples? We provide eggs, bread, cereals, coffee, milk, tea and cookies. Enjoy cooking as my kitchen boasts full size appliances. The dining table is for four people. Need to wash your clothes? There is a washer and a dryer. We provide hampers, detergents, and clothing conditioner. \r\n\r\nIf you need to hit the gym, there is located at the fourth floor of the building. There is indoor spa and pool.",
+	"address": "321, First Street",
+	"category": "House",
+	"bed_room": 1,
+	"bath_room": 1,
+	"gallery": {
+		"data": [{
+				"id": 1,
+				"name": "apartment2.jpg"
+			},
+			{
+				"id": 2,
+				"name": "apartment2-1.jpg"
+			},
+			{
+				"id": 3,
+				"name": "apartment2-2.jpg"
+			}
+		]
+	},
+	"score": 4.1,
+	"review": {
+		"data": [{
+			"id": 1,
+			"title": "Amazing room",
+			"body": "Lorem Ipsum yes.",
+			"user_id": "3"
+		}]
+	},
+	"user_id": "1",
+	"active": true,
+	"utility_heating": true,
+	"utility_wifi": true,
+	"utility_patio": false,
+	"kitchen_fridge": true,
+	"kitchen_freezer": true,
+	"kitchen_oven": true,
+	"kitchen_stove": true,
+	"kitchen_potspans": false,
+	"kitchen_microwave": false,
+	"kitchen_dishwasher": false,
+	"bathroom_shower": true,
+	"bathroom_sink": true,
+	"bathroom_toilet": true,
+	"bathroom_bathtub": false,
+	"bathroom_window": true
+}]

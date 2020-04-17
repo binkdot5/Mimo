@@ -1,0 +1,59 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=OpenSans');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Bootstrap Vue
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+// NeoSans Font
+@font-face {
+    font-family: 'neosansbold';
+    src: url('../../public/fonts/neosans_bold-webfont.woff2') format('woff2'),
+         url('../../public/fonts/neosans_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// SASS Custom Variables
+$mimoGradient: linear-gradient(180deg, rgba(10,38,232,1) 0%, rgba(0,122,255,1) 100%);
+$headerFilter: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,122,255,0) 100%); 
+$bodyFont: 'open_sansregular', Helevtica, sans-serif;
+$white: #fff;
+$black: #000;
+$grey: #F3F3F3;
+
+//
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    width: 5rem;
+}
+
+#bg-row {
+    background-image: url('../../public/images/bg-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+#gradient-row{
+    background-color: $mimoGradient;
+    height: 400px;
+}
+
+.icon-size {
+    width: 50px;
+}
+
+.icon-sub {
+    width: 20px;
+}
