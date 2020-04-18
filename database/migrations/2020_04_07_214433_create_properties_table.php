@@ -21,9 +21,9 @@ class CreatePropertiesTable extends Migration
             $table->string('category');
             $table->integer('bed_room');
             $table->integer('bath_room');
-            $table->json('gallery');
+            $table->string('gallery');
             $table->float('score');
-            $table->json('review');
+            $table->string('review');
             $table->integer('user_id')->unsigned();
             $table->boolean('active')->default(false);
 

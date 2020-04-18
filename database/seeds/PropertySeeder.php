@@ -24,16 +24,9 @@ class PropertySeeder extends Seeder
                 'category' => 'Apartment',
                 'bed_room' => 1,
                 'bath_room' => 1,
-                'gallery' => '{"data":[
-                        {"id": "1", "name": "apartment1.jpeg"},
-                        {"id": "2", "name": "apartment1-1.jpeg"},
-                        {"id": "3", "name": "apartment1-2.jpeg"},
-                    ]}',
+                'gallery' => 'apartment1.jpg',
                 "score" => 4.25,
-                "review" => '{"data":[
-                    {"id": "1", "title": "Really cool place!", "body": "Lorem Ipsum Yes!", "user_id": "2"},
-                    {"id": "2", "title": "Super duper!", "body": "made me feel complete", "user_id": "3"}
-                ]}',
+                "review" => 'Lorem Ipusm',
                 'user_id' => 1,
                 "active" => true,
                 'utility_heating' => true,
@@ -61,16 +54,9 @@ class PropertySeeder extends Seeder
                 'category' => 'House',
                 'bed_room' => 1,
                 'bath_room' => 1,
-                'gallery' => '{"data":[
-                        {"id": "1", "name": "apartment2.jpeg"},
-                        {"id": "2", "name": "apartment2-1.jpeg"},
-                        {"id": "3", "name": "apartment2-2.jpeg"},
-                    ]}',
+                'gallery' => 'apartment2.jpg',
                 "score" => 4.25,
-                "review" => '{"data":[
-                    {"id": "1", "title": "Really cool place!", "body": "Lorem Ipsum Yes!", "user_id": "2"},
-                    {"id": "2", "title": "Super duper!", "body": "made me feel complete", "user_id": "3"}
-                ]}',
+                "review" => 'Really cool place!',
                 'user_id' => 1,
                 "active" => true,
                 'utility_heating' => true,
@@ -98,16 +84,9 @@ class PropertySeeder extends Seeder
                 'category' => 'House',
                 'bed_room' => 1,
                 'bath_room' => 1,
-                'gallery' => '{"data":[
-                        {"id": "1", "name": "apartment3.jpeg"},
-                        {"id": "2", "name": "apartment3-1.jpeg"},
-                        {"id": "3", "name": "apartment3-2.jpeg"},
-                    ]}',
+                'gallery' => 'apartment3.jpg',
                 "score" => 4.48,
-                "review" => '{"data":[
-                    {"id": "1", "title": "Really cool place!", "body": "Lorem Ipsum Yes!", "user_id": "2"},
-                    {"id": "2", "title": "Super duper!", "body": "made me feel complete", "user_id": "3"}
-                ]}',
+                "review" => 'Super duper!',
                 'user_id' => 2,
                 "active" => true,
                 'utility_heating' => true,

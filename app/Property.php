@@ -13,8 +13,8 @@ class Property extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'description', 'address', 'category', 
-        'bed_room', 'bath_room', 'score', 'active', 
+        'title', 'description', 'address', 'category', 'gallery',
+        'bed_room', 'bath_room', 'score', 'active', 'review',
         'utility_heating', 'utility_wifi', 'utility_patio', 'kitchen_fridge', 
         'kitchen_freezer', 'kitchen_oven', 'kitchen_stove', 'ktichen_potspans', 
         'kitchen_microwave', 'kitchen_dishwasher', 'bathroom_shower', 
@@ -22,37 +22,18 @@ class Property extends Model
     ];
 
     /**
-     * The attributes that should be cast.
-     * 
-     * @var array
-     */
-    protected $casts = [
-        'gallery' => 'array',
-        'review' => 'array'
-    ];
-
-    /**
-     * The attributes that are hidden.
-     * 
-     * @var array
-     */
-    // protected $hidden = [
-    //     'slug'
-    // ];
-
-    /**
      * Each property belongs to a user.
      */
     public function user()
     {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo(User::class);
     }
 
     /**
-     * Each property can have several reviews.
+     * Each property can have several rooms.
      */
-    public function reviews()
+    public function rooms()
     {
-        return $this->hasMany('App\Models\Review');
+        return $this->hasMany(Room::class);
     }
 }

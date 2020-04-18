@@ -32,8 +32,7 @@ Route::get('landlord/dashboard', 'HomeController@landlordDashboard')->name('land
 //Route Group
 Route::group(['middleware' => 'auth'], function() {
     //Property Routes
-    Route::get('/landlord/properties/{property}', 'PropertyController@show');
-    Route::resource('/landlord/properties', 'PropertyController')->except('index', 'show');
+    Route::resource('/properties', 'PropertyController')->except('index');
 
     //Reservation Routes
     Route::get('dashboard/reservations/create/{id}', 'ReservationController@create');
