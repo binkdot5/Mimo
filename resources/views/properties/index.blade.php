@@ -12,7 +12,8 @@
                     <h5 class="card-title">{{ $property->title }}</h5>
                     <small class="text-muted">{{ $property->address }}</small>
                     <p class="card-text">{{ $property->description }}</p>
-                    <a href="#" class="btn btn-primary">Book Now</a>
+                    <a href="/properties/{{$property->id}}" class="btn btn-secondary">View</a>
+                    <a href="/dashboard/reservations/create/{id}" class="btn btn-primary">Reserve Now</a>
                 </div>
             </div>  
         </div>

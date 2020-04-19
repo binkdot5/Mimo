@@ -24,6 +24,7 @@ Vue.use(BootstrapVue);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('booking-component', require('./components/BookingComponent.vue').default);
+Vue.component('utility-component', require('./components/UtilityComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

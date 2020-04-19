@@ -14,10 +14,11 @@
 
     <!-- Fonts -->
     <script src="https://kit.fontawesome.com/926178bdb0.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=OpenSans" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
@@ -78,7 +79,7 @@
             </div>
         </nav>
 
-        <main class="container-fluid">
+        <main class="container">
             @yield('content')
 
             <footer class="bg-dark mt-5">

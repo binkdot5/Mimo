@@ -1,5 +1,5 @@
 <template>
-<section class="p-5">
+<div class="container p-5">
     <h1 class="hidden">Search for a Room</h1>
     <div class="row">
         <div class="col-sm">
@@ -26,7 +26,7 @@
     <div class="row justify-content-center mt-4">
         <b-button size="lg" variant="primary">Search</b-button>    
     </div>
-</section>
+</div>
 </template>
 
 <script>

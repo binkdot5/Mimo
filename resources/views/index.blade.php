@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="bg-row">
+<section class="col" id="bg-row">
     <booking-component></booking-component>
 </section>
 <section class="row pt-4">
