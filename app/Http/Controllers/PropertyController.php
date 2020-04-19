@@ -137,4 +137,17 @@ class PropertyController extends Controller
 
         return redirect ('/properties')->with('success', 'Property deleted.');
     }
+
+    /**
+     * Show user-auth properties in dashboard.
+     * 
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function userproperties($id)
+    {    
+        $properties = Property::find($id);
+        $user = $properties->auth()->user()->get();
+
+        return View::make('dashboard.properties')->with(array("user" => $user, "properties" => $properties));
+    }
 }

@@ -2,50 +2,44 @@
 
 @section('title', 'View Property')
 @section('content')
-<div class="col">
-    <div class="card">
-        <div class="card-body">
-            <div class="col">
-            <img src="{{ asset("images/{$property->gallery}") }}" class="card-img-top" alt="property image">
+<section class="row justify-content-md-center">
+    <div class="propertycard col-md-auto align-self-center pt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="col">
+                <img src="{{ asset("images/{$property->gallery}") }}" class="card-img-top pt-4" alt="property image">
+                </div>
+                <h5 class="card-title p-4 mb-3">{{$property->title}}</h5>
+                <div class="row">
+                    <div class="d-inline-flex col justify-content-center">
+                        <h6>{{$property->address}}</h6>
+                    </div>
+                    <div class="d-inline-flex col justify-content-center">
+                        <img src="{{ asset('icons/mimo-badge.svg') }}" alt="mimo badge">
+                    </div>
+                </div>  
+                <div class="row mb-3">
+                    <div class="d-inline-flex col justify-content-center">
+                        <img src="{{ asset('icons/bedroom.svg') }}" alt="number of bathrooms icon" class="iconsD">
+                        <p><b>{{$property->bed_room}}</b> Bedroom</p>
+                    </div>
+                    <div class="d-inline-flex col justify-content-center">
+                        <img src="{{ asset('icons/bathroom.svg') }}" alt="number of bedrooms icon" class="iconsD">
+                        <p><b>{{$property->bath_room}}</b> Bathroom</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-4 justify-content-center">
+                        <h6>Description</h6>
+                        <p>{{$property->description}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                </div>      
             </div>
-            <h5 class="card-title">{{$property->title}}</h5>
-            <div class="row">
-                <div class="d-inline-flex col">
-                    <h5>$1400</h5>
-                </div>
-                <div class="d-inline-flex col">
-                    <img src="{{ asset('icons/mimo-badge.svg') }}" alt="mimo badge">
-                </div>
-            </div>  
-            <div class="row">
-                <div class="d-inline-flex col justify-content-center">
-                    <p>{{$property->address}}</p>
-                </div>
-                <div class="d-inline-flex col justify-content-center">
-                    <i class="far fa-star fa-stack-1x"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="d-inline-flex col justify-content-center">
-                    <img src="{{ asset('icons/bed.svg') }}" alt="number of bathrooms icon">
-                    <p><b>{{$property->bed_room}}</b> Bedroom</p>
-                </div>
-                <div class="d-inline-flex col justify-content-center">
-                    <img src="{{ asset('icons/bed.svg') }}" alt="number of bedrooms icon">
-                    <p><b>{{$property->bath_room}}</b> Bathroom</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col justify-content-center">
-                    <h6>Description</h6>
-                    <p>{{$property->description}}</p>
-                </div>
-            </div>
-            <div class="row">
-            </div>      
         </div>
     </div>
-</div>
+</section>    
 <section class="row">
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Apartment</a>
@@ -54,89 +48,110 @@
     <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Room</a>
     </div>
     <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-        <div class="col justify-content-center">
-            <div>
-                <img src="{{asset ('icons/heating.svg')}}" alt="heating icon">  
-                <h6>Heating {{$property->utility_heating}}</h6> 
-            </div>
-            <div>
-                <img src="{{asset ('icons/heating.svg')}}" alt="wifi icon">  
-                <h6>Wifi {{$property->utility_wifi}}</h6> 
-            </div>
-            <div>
-                <img src="{{asset ('icons/patio.svg')}}" alt="patio icon">  
-                <h6>Outdoor Access {{$property->utility_patio}}</h6> 
-            </div>
-        </div>
-    </div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-        <div class="row">
-            <div class="col">
-                <div>
-                    <img src="{{asset ('icons/heating.svg')}}" alt="fridge icon">  
-                    <h6>Fridge {{$property->kitchen_fridge}}</h6> 
-                </div>
-                <div>
-                    <img src="{{asset ('icons/heating.svg')}}" alt="freezer icon">  
-                    <h6>Freezer {{$property->kitchen_freezer}}</h6> 
-                </div>
-                <div>
-                    <img src="{{asset ('icons/patio.svg')}}" alt="oven icon">  
-                    <h6>Oven {{$property->kitchen_oven}}</h6> 
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row ml-3">
+                <div class="col">
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/utility_heating.svg')}}" alt="heating icon" class="iconsU eIcons">  
+                        <h6>Heating</h6>
+                        <p class="iconVal hidden">{{$property->utility_heating}}</p> 
+                    </div>
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/wifi.svg')}}" alt="wifi icon" class="iconsU">  
+                        <h6>Wifi</h6>
+                        <p class="hidden">{{$property->utility_wifi}}</p> 
+                    </div>
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/utility_patio.svg')}}" alt="patio icon" class="iconsU">  
+                        <h6>Outdoor Access</h6>
+                        <p class="hidden">{{$property->utility_patio}}</p> 
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div>
-                    <img src="{{asset ('icons/heating.svg')}}" alt="fridge icon">  
-                    <h6>Stove {{$property->kitchen_stove}}</h6> 
-                </div>
-                <div>
-                    <img src="{{asset ('icons/heating.svg')}}" alt="freezer icon">  
-                    <h6>Pots & Pans {{$property->kitchen_potspans}}</h6> 
-                </div>
-                <div>
-                    <img src="{{asset ('icons/patio.svg')}}" alt="oven icon">  
-                    <h6>Microwave {{$property->kitchen_microwave}}</h6> 
-                </div>
-            </div>
-            <div class="col">
-                <div>
-                    <img src="{{asset ('icons/dishwasher.svg')}}" alt="dishwasher icon">  
-                    <h6>Stove {{$property->kitchen_dishwasher}}</h6> 
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        </div>    
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="row">
                 <div class="col">
-                    <div>
-                        <img src="{{asset ('icons/heating.svg')}}" alt="fridge icon">  
-                        <h6>Fridge {{$property->bathroom_shower}}</h6> 
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/kitchen_fridge.svg')}}" alt="fridge icon" class="iconsU">  
+                        <h6>Fridge</h6>
+                        <p class="hidden">{{$property->kitchen_fridge}}</p> 
                     </div>
-                    <div>
-                        <img src="{{asset ('icons/heating.svg')}}" alt="freezer icon">  
-                        <h6>Freezer {{$property->bathroom_sink}}</h6> 
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/kitchen_freezer.svg')}}" alt="freezer icon" class="iconsU">  
+                        <h6>Freezer</h6>
+                        <p class="hidden">{{$property->kitchen_freezer}}</p> 
                     </div>
-                    <div>
-                        <img src="{{asset ('icons/patio.svg')}}" alt="oven icon">  
-                        <h6>Oven {{$property->bathroom_toilet}}</h6> 
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/kitchen_oven.svg')}}" alt="oven icon" class="iconsU">  
+                        <h6>Oven</h6>
+                        <p class="hidden">{{$property->kitchen_oven}}</p> 
                     </div>
                 </div>
                 <div class="col">
-                    <div>
-                        <img src="{{asset ('icons/heating.svg')}}" alt="fridge icon">  
-                        <h6>Stove {{$property->bathroom_bathtub}}</h6> 
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/kitchen_stove.svg')}}" alt="fridge icon" class="iconsU">  
+                        <h6>Stove</h6>
+                        <p class="iconsU hidden">{{$property->kitchen_stove}}</p> 
                     </div>
-                    <div>
-                        <img src="{{asset ('icons/heating.svg')}}" alt="freezer icon">  
-                        <h6>Pots & Pans {{$property->bathroom_window}}</h6> 
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/pots-pans.svg')}}" alt="pots-n-pans icon" class="iconsU">  
+                        <h6>Pots & Pans</h6>
+                        <p class="iconsU hidden">{{$property->kitchen_potspans}}</p> 
+                    </div>
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/kitchen_microwave.svg')}}" alt="oven icon" class="iconsU">  
+                        <h6>Microwave</h6>
+                        <p class="hidden">{{$property->kitchen_microwave}}</p> 
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/kitchen_dishwasher.svg')}}" alt="dishwasher icon" class="iconsU">  
+                        <h6>Dishwasher</h6>
+                        <p class="hidden">{{$property->kitchen_dishwasher}}</p> 
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" class="iconsU">
+            <div class="row">
+                <div class="col">
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/bathroom_shower.svg')}}" alt="shower icon" class="iconsU">  
+                        <h6>Shower</h6>
+                        <p class="hidden">{{$property->bathroom_shower}}</p> 
+                    </div>
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/bathroom_sink.svg')}}" alt="basin icon" class="iconsU">  
+                        <h6>Washbasin</h6>
+                        <p class="hidden">{{$property->bathroom_sink}}</p> 
+                    </div>
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/bathroom_toilet.svg')}}" alt="toilet icon" class="iconsU">  
+                        <h6>Toilet/WC</h6>
+                        <p class="hidden">{{$property->bathroom_toilet}}</p> 
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/bathroom_bath.svg')}}" alt="bathtub icon" class="iconsU">  
+                        <h6>Bathtub</h6>
+                        <p class="hidden">{{$property->bathroom_bathtub}}</p> 
+                    </div>
+                    <div class="iconsUbg">
+                        <img src="{{asset ('icons/window.svg')}}" alt="window icon" class="iconsU">  
+                        <h6>Pots & Pans</h6>
+                        <p class="hidden">{{$property->bathroom_window}}</p> 
+                    </div>
+                </div>
+            </div>
+        </div>    
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+<section>
+
+</section>
 @endsection

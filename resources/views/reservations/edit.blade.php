@@ -9,7 +9,6 @@
         </div>
         <div class="card-body">
             <h5 class="card-title"></h5>
-            <p class="card-text">Yes</p>
             {!! Form::open(['action' => ['ReservationController@update', $reservation->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 <div class="form-group">
                     {{Form::label('Arrival', 'Update Arrival Date')}}

@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'avatar', 'first_name', 'last_name', 'dob', 'college', 'email', 'password', 'is_admin'
+        'avatar', 'first_name', 'last_name', 'dob', 'college', 'email', 'password'
     ];
 
     /**
@@ -25,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'is_admin',
     ];
 
     /**
@@ -38,26 +38,18 @@ class User extends Authenticatable
     ];
 
     /**
+     * A user may have many properties.
+     */
+    public function properties()
+    {
+        return $this->hasMany(Properties::class);
+    }
+    
+    /**
      * A user may have many reservations.
      */
     public function reservations()
     {
         return $this->hasMany(Reservation::class);
-    }
-
-    /**
-     * A user may have many wishlists.
-     */
-    public function wishlist()
-    {
-        return $this->hasMany(Wishlist::class);
-    }
-
-    /**
-     * A user may have many reviews.
-     */
-    public function reviews()
-    {
-        return $this->hasMany(Review::class);
     }
 }

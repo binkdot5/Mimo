@@ -25,14 +25,4 @@ class HomeController extends Controller
     {
         return view('dashboard');
     }
-
-    /**
-     * Show the landlord dashboard.
-     * 
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function landlordDashboard()
-    {
-        return view('landlord-dashboard');
-    }
 }

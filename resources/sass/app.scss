@@ -23,7 +23,7 @@
 // SASS Custom Variables
 $mimoGradient: linear-gradient(180deg, rgba(10,38,232,1) 0%, rgba(0,122,255,1) 100%);
 $headerFilter: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,122,255,0) 100%); 
-$bodyFont: 'open_sansregular', Helevtica, sans-serif;
+$bodyFont: 'Open Sans', Helevtica, sans-serif;
 $white: #fff;
 $black: #000;
 $grey: #F3F3F3;
@@ -45,9 +45,8 @@ $grey: #F3F3F3;
     height: 400px;
 }
 
-#gradient-row{
-    background-color: $mimoGradient;
-    height: 400px;
+.gradient-row{
+    background: $mimoGradient;
 }
 
 .icon-size {
@@ -57,3 +56,74 @@ $grey: #F3F3F3;
 .icon-sub {
     width: 20px;
 }
+
+.iconsUbg {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .iconsU {
+        width: 80px;
+    }
+
+    .iconsD {
+        width: 40px;
+    }
+
+    .iconsUbg {
+        padding: 2rem;
+        margin: 2rem;
+        background-color: #F3F3F3;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    } 
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .iconsU {
+        width: 100px;
+    } 
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .propertycard.col-md-auto.align-self-center.pt-5 {
+        flex: 0 0 80%;
+    }
+
+    .iconsU {
+        width: 100px;
+    } 
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .propertycard.col-md-auto.align-self-center.pt-5 {
+        flex: 0 0 60%;
+    }
+
+    .iconsU {
+        width: 100px;
+    } 
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .propertycard.col-md-auto.align-self-center.pt-5 {
+        flex: 0 0 40%;
+    }
+
+    .iconsU {
+        width: 100px;
+    } 
+ }

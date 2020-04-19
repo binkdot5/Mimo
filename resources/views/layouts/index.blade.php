@@ -78,7 +78,7 @@
                 </div>
             </div>
         </nav>
-
+        @include('partials.header')
         <div class="container-fluid">
             @yield('content')   
         </div>
@@ -99,6 +99,5 @@
             </ul>
         </footer>
     </main>
-    <script src="{{ asset('js/amenities.js') }}"></script>
 </body>
 </html>

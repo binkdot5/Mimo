@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -50,8 +50,8 @@ class LoginController extends Controller
 
         if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
         {
-            if (auth()->user()->is_admin == 1) {
-                return redirect()->route('landlord.dashboard');
+            if (auth()->user()) {
+                return redirect()->route('dashboard');
             } else {
                 return redirect()->route('login')
                 ->with('error', 'Please check your login details again.');

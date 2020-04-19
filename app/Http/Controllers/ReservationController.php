@@ -20,7 +20,7 @@ class ReservationController extends Controller
         -> orderBy('arrival', 'asc')
         -> get();
 
-        return view('dashboard.reservations')->with('reservations', $reservations);
+        return view('reservations.index')->with('reservations', $reservations);
     }
 
     /**
@@ -30,7 +30,7 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        return view('dashboard.reservationCreate');
+        return view('reservations.create');
     }
 
     /**
@@ -59,7 +59,7 @@ class ReservationController extends Controller
         $property_id = $reservation->property_id;
         $propertyInfo = Property::get()->find($property_id);
 
-        return view('dashboard.reservationSingle', compact('reservation', 'propertyInfo'));
+        return view('reservations.show', compact('reservation', 'propertyInfo'));
     }
 
     /**
