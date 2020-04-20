@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'college' => 'Fanshawe',
             'dob' => '1985-12-12',
             'email' => 'admin@hotmail.com',
-            'password' => '12345678',
+            'password' => bcrypt('12345678'),
             'is_admin' => 1,
             'terms' => 1,
         ]);

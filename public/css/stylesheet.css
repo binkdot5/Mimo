@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'neosansbold';
+    src: url('neosans_bold-webfont.woff2') format('woff2'),
+         url('neosans_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.neo {
+    font-family: 'neosansbold', sans-serif !important;
+}

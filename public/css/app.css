@@ -66,7 +66,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -385,7 +385,6 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "neosansbold", sans-serif !important !important;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -6377,7 +6376,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6598,7 +6597,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11077,7 +11076,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -11396,7 +11395,6 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "neosansbold", sans-serif !important !important;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -17378,7 +17376,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -17599,7 +17597,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -24791,7 +24789,7 @@ input[type=color].form-control:disabled {
 
 @font-face {
   font-family: "neosansbold";
-  src: url(/fonts/neosans_bold-webfont.woff2?7b131164de81e13bd36c0df3dff9b9f6) format("woff2"), url(/fonts/neosans_bold-webfont.woff?a71547d8287a9dadc865b0dd00d0cd1d) format("woff");
+  src: url(/fonts/neosans_bold-webfont.woff2?23d2ef4f42e098be894c027643c94901) format("woff2"), url(/fonts/neosans_bold-webfont.woff?c2008a4854e434e4e30925ad053df456) format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -24831,6 +24829,10 @@ input[type=color].form-control:disabled {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.neo {
+  font-family: "neosansbold", Helvetica, sans-serif !important;
 }
 
 @media (max-width: 575.98px) {

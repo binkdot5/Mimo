@@ -12,7 +12,16 @@ class Reservation extends Model
      * @var array
      */
     protected $fillable = [
-        'property_id', 'user_id', 'start_date', 'end_date', 'total', 'tax', 'price'
+        'room_id', 'user_id', 'start_date', 'end_date'
+    ];
+
+     /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'total_price', 'remember_token', 'is_admin',
     ];
 
     public function property()

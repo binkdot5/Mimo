@@ -8,7 +8,7 @@
             <h2>Create Reservation</h2>
         </div>
         <div class="card-body">
-            <h5 class="card-title"></h5>
+            <h5 class="card-title">{{ $propertyInfo->title }}</h5>
             <p class="card-text">Yes</p>
             {!! Form::open(['action' => 'ReservationController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 <div class="form-group">

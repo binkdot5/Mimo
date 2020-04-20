@@ -72,9 +72,7 @@ class ReservationController extends Controller
     {
         $reservation = Reservation::find($id);
 
-        return 
-        \View::make('dashboard.reservationEdit')
-        ->with('reservation', $reservation);
+        return \View::make('reservations.edit')->with('reservation', $reservation);
     }
 
     /**

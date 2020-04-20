@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Profile</div>
-
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -14,13 +13,14 @@
                         </div>
                     @endif
 
-                    @include('partials.menu')
+                    
 
-                    <h2 class="pt-3">Welcome to Mimo! Person.</h2>
+                    @include('partials.menu')
 
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

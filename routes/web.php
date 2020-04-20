@@ -24,6 +24,10 @@ Route::get('/properties', 'PropertyController@index');
 
 //Authenticanted routes start here
 Auth::routes();
+//
+//
+//Dashboard Route
+Route::get('landlord/dashboard', 'HomeController@landlordDashboard')->name('landlord.dashboard')->middleware('is_admin');
 
 //Route Group
 Route::group(['middleware' => 'auth'], function() {

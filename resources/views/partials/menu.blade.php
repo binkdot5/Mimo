@@ -1,3 +1,15 @@
+<ul class="nav nav-pills nav-justified p-5">
+  <li class="nav-item">
+    <a class="nav-link active" href="/dashboard/reservations">Your Reservations</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Register Property</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Profile Settings</a>
+  </li>
+</ul>
+
 <div class="container">
   <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
