@@ -16,11 +16,11 @@ class CreateReservationsTable extends Migration
         Schema::create('reservations', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->integer('user_id')->unsigned();
-            $table->integer('property_id')->unsigned();
-            $table->date('arrival');
-            $table->date('departure');
-            $table->integer('price');
-            $table->integer('total_price');
+            $table->integer('property_id')->unsigned()->default(1);
+            $table->date('arrival')->nullable();
+            $table->date('departure')->nullable();
+            $table->integer('price')->nullable();
+            $table->integer('total_price')->nullable();
             $table->timestamps();
         });
     }

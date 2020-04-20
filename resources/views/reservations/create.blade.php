@@ -8,8 +8,8 @@
             <h2>Create Reservation</h2>
         </div>
         <div class="card-body">
-            <h5 class="card-title">{{ $propertyInfo->title }}</h5>
-            <p class="card-text">Yes</p>
+            <h5 class="card-title">Downtown Property</h5>
+            <p class="card-text"></p>
             {!! Form::open(['action' => 'ReservationController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 <div class="form-group">
                     {{Form::label('Arrival', 'Set Arrival Date')}}
@@ -19,8 +19,8 @@
                     {{Form::label('Departure', 'Set Departure Date')}}
                     {{Form::date('Departure', ''), ['class' => 'form-control', 'placeholder' => '01/31/2020',]}}
                 </div>
-                {{Form::hidden('_method','PUT')}}
-                {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+                {{Form::hidden('_method','POST')}}
+                {{Form::submit('Reserve', ['class'=>'btn btn-primary'])}}
             {!! Form::close() !!}
         </div>
     </div>

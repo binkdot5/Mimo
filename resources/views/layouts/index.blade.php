@@ -12,8 +12,13 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/926178bdb0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=OpenSans" rel="stylesheet">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -55,9 +60,6 @@
                                     <a class="dropdown-item" href="{{ route('dashboard') }}">
                                         Dashboard
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('landlord.dashboard') }}">
-                                        Landlord
-                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -75,25 +77,10 @@
             </div>
         </nav>
         @include('partials.header')
-        <div class="container-fluid">
-            @yield('content')   
+        <div class="container">
+            @yield('content')  
         </div>
-        <footer class="bg-dark mt-5">
-            <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Privacy Policy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Developer</a>
-            </li>
-            </ul>
-        </footer>
+        @include('partials.footer')
     </main>
 </body>
 </html>

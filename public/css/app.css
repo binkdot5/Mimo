@@ -24835,6 +24835,21 @@ input[type=color].form-control:disabled {
   font-family: "neosansbold", Helvetica, sans-serif !important;
 }
 
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+#landlord {
+  background-image: url(/images/bg-tentant.jpg?a35c0e5091be189cf10aa4fa3ac72ee9);
+  padding: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 575.98px) {
   .iconsU {
     width: 80px;
@@ -24869,6 +24884,10 @@ input[type=color].form-control:disabled {
   .iconsU {
     width: 100px;
   }
+
+  .iconsD {
+    width: 30px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -24879,6 +24898,10 @@ input[type=color].form-control:disabled {
   .iconsU {
     width: 100px;
   }
+
+  .iconsD {
+    width: 30px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -24888,6 +24911,10 @@ input[type=color].form-control:disabled {
 
   .iconsU {
     width: 100px;
+  }
+
+  .iconsD {
+    width: 30px;
   }
 }
 

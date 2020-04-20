@@ -77878,16 +77878,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "row justify-content-center mt-4" },
-      [
-        _c("b-button", { attrs: { size: "lg", variant: "primary" } }, [
-          _vm._v("Search")
-        ])
-      ],
-      1
-    )
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
@@ -77919,6 +77910,18 @@ var staticRenderFns = [
           )
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row justify-content-center mt-4" }, [
+      _c(
+        "a",
+        { staticClass: "btn btn-primary", attrs: { href: "/properties" } },
+        [_vm._v("Search")]
+      )
     ])
   }
 ]

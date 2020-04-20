@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="row justify-content-center mt-4">
-        <b-button size="lg" variant="primary">Search</b-button>    
+        <a href="/properties" class="btn btn-primary">Search</a>    
     </div>
 </div>
 </template>

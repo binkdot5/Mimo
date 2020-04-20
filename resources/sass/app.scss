@@ -72,6 +72,21 @@ $grey: #F3F3F3;
     font-family: $headerFont;
 }
 
+.black {
+    color: #000;
+}
+
+.white {
+    color: #fff;
+}
+
+#landlord {
+    background-image: url('../../public/images/bg-tentant.jpg');
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .iconsU {
@@ -109,6 +124,10 @@ $grey: #F3F3F3;
     .iconsU {
         width: 100px;
     } 
+
+    .iconsD {
+        width: 30px;
+    }  
  }
 
 // Large devices (desktops, 992px and up)
@@ -119,7 +138,11 @@ $grey: #F3F3F3;
 
     .iconsU {
         width: 100px;
-    } 
+    }
+     
+    .iconsD {
+        width: 30px;
+    }  
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -130,5 +153,9 @@ $grey: #F3F3F3;
 
     .iconsU {
         width: 100px;
-    } 
+    }
+
+    .iconsD {
+        width: 30px;
+    }  
  }

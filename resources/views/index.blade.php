@@ -27,6 +27,13 @@
         </div>
     </div>
 </section>
-<section class="gradient-row">
+<section id="landlord">
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <h3 class="white">Are you a landlord looking for tenants?</h3>
+            <h6 class="white">Don't worry we've got your back</h6>
+            <a href="#" class="btn btn-primary">Register Now</a>
+        </div>
+    </div>
 </section>
 @endsection
